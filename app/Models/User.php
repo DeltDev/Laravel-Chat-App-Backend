@@ -11,4 +11,11 @@ class User extends Model
     protected $keyType = 'int';
     public $timestamps = true;
     public $incrementing = true;
+
+    protected $fillable = [
+        'username',
+        'password',
+        'email',
+        'name'
+    ];
 }
